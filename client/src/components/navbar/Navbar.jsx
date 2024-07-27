@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
 	<div className="nav_container">
-		<nav className='navbar'>
+		<nav className='navbar container'>
     	<div className="logo">
 			<a href="" className='logo_text'>
 				<div>Pixel</div>

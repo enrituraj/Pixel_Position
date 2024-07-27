@@ -1,0 +1,40 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+    border-bottom: 1px solid #1a1a1a;
+    .title{
+        text-transform: capitalize;
+    }
+    .input_search{
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+        background-color: #ddd;
+        border-radius: 50px;
+        input{
+            flex: 1;
+            border: none;
+            outline: none;
+            padding: 1rem 2rem;
+            font-size: 1.25rem;
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+            
+        }
+        .btn_search{
+            padding: 1rem 2rem;
+            border-radius: 0;
+            color: #ffff;
+            font-size: 1.05rem;
+            font-weight: 500;
+
+            background-color: #1a1a1a;
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+    }
+}
