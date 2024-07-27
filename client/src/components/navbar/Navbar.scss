@@ -1,0 +1,76 @@
+.nav_container{
+    // background-color: red;
+    border-bottom: 1px solid #ddd;
+    .navbar{
+        max-width: 1140px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-transform: capitalize;
+        padding: 1rem 4rem;
+        .logo{
+            text-transform: uppercase;
+        }
+        .menu{
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+        .toogle_menu{
+            font-size: 1.50rem;
+            cursor: pointer;
+        }
+        .post_job_btn{
+            border-radius: 8px;
+            border: 1px solid transparent;
+            padding: 0.6em 1.2em;
+            font-size: 1em;
+            font-weight: 500;
+            color: #fff;
+            background-color: #1a1a1a;
+            cursor: pointer;
+            transition: border-color 0.25s;
+        }
+
+        .lg-hidden{
+            display: none;
+        }
+    }
+}
+
+@media (max-width:768px){
+    .sm-hidden{
+        display: none !important;
+    }
+    
+    .lg-hidden{
+        display: block !important;
+    }
+    .menu{
+        position: absolute;
+        display: flex !important;
+        flex-direction: column;
+        top: 80px;
+        left: -10rem;
+        opacity: 0;
+        visibility: hidden;
+        width: 100%;
+        border: 2px solid red;
+        gap: 0px  !important;
+        transition: all 0.75s ease-in-out;
+        .menu_li{
+            .menu_link{
+                display: block;
+                padding: .75rem 2rem;
+                border-bottom: 1px solid #1a1a1a;
+            }
+        }
+    }
+    .menu.active{
+        
+        left: 0rem;
+        opacity: 1;
+        visibility: visible;
+    }
+}
