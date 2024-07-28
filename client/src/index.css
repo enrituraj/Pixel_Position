@@ -58,6 +58,21 @@ button:focus-visible {
   max-width: 1140px;
 margin: auto;
 }
+.row{
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+}
+
+section{
+  padding: 4rem 0;
+}
+.section_title{
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  list-style-type: square;
+}
 
 @media (prefers-color-scheme: light) {
   :root {

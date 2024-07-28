@@ -1,0 +1,50 @@
+.job_card{
+    position: relative;
+    margin: 2rem 0;
+    background: #dbdbdb;
+    padding: 1rem;
+    border-radius: 4px;
+    font-weight: 500;
+    text-transform: capitalize;
+    .company_name{
+        font-size: 0.75rem;
+    }
+    h1{
+        font-size: 1.5rem;
+        padding: 1rem 0;
+    }
+    p{
+        margin-bottom: 1rem;
+
+    }
+    h1,p{
+        text-align: center;
+    }
+    .tags_group{
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        .tag{
+            font-size: 12px;
+            background: #a7a7a7;
+            border-radius: 4px;
+            padding: .25rem .5rem;
+            cursor: pointer;
+        }
+    }
+    .img_box{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 50px;
+        height: 50px;
+        padding: .25rem;
+        background-color: #000;
+        border-radius: 4px;
+        img{
+            object-position: center;
+            object-fit: contain;
+            width: 100%;
+        }
+    }
+}
